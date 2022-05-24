@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="hang5.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hangman</title>
+  </head>
+  <body>
+    <main>
+      <div class="btn">
+        <button id="buttonstart" onclick="Startfn()">Start</button>
+      </div>
+
+      <div id="start" style="display: none">
+        <div class="container-fluid">
+          <h1 class="text-center" id="hanbtn">Hangman</h1>
+
+          <div class="float-right">
+            Wrong Guesses: <span id="mistakes"> 0 </span> of
+            <span id="maxwrong">6</span>
+          </div>
+
+          <div id="js_timer">
+            <div id="timerarea">Timer comes here</div>
+          </div>
+
+          <div class="text-center">
+            <img id="hangmanPic" src="./images/0.jpg" alt="" />
+            <p class="guessfont">Guess the programming language:</p>
+            <p id="wordSpotlight">The word to be guessed goes here</p>
+
+            <div id="keyboard"></div>
+
+            <button class="button" onclick="reset()">PLAY AGAIN</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="hang5.js"></script>
+  </body>
+</html>
